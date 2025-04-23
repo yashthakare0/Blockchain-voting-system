@@ -102,24 +102,7 @@ margin-left: -20px;
         };
       </script>
 </head>
-<body>
-    <div class="container">
-        <h2>Blockchain  Voting Feedback Form</h2>
-        <form action="https://script.google.com/macros/s/AKfycbzwncHtcd-cCtofSSxCAopSO5MlSWbPzPna3sIeT5LpVpMByYW2p4aXqwQ2extYFwBM/exec" method="post" onsubmit="return handleFormSubmit(event)">
-            <!-- 1. Reason for Candidate -->
-             <label for="name">Your Name:</label>
-    <input type="text" id="name" name="Name" placeholder="Enter your name"  readonly required>
-            <label for="reason">Why Did You Vote for Your Selected Candidate?</label>
-            <textarea id="reason" name="Reason for Candidate" rows="4" placeholder="Enter your reason here..." required></textarea>
-
-            <!-- 2. Web Experience -->
-            <label for="Web Experience">How Was Your Web Experience?</label>
-            <select id="web-experience" name="Web Experience" required>
-                <option value="">-- Select an option --</option>
-                <option value="Excellent">Excellent</option>
-                <option value="Good">Good</option>
-                <option value="Average">Average</option>
-                <option value="Poor">Poor</option>
+<bod
             </select>
 
             <!-- 3. Suggestions -->
@@ -153,17 +136,6 @@ margin-left: -20px;
             }, 500); // Wait 500ms before redirecting
             return true;
         }
-    </script>
-    <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    console.log("Page Loaded");  // Debugging step
-
-    const nameField = document.getElementById("name");
-
-    if (!nameField) {
-        console.error("Name input field not found!");
-        return;
-    }
 
     const storedName = localStorage.getItem("userName");
     console.log("Fetched Name from Storage:", storedName); // Debugging step
